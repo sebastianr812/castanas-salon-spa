@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
+
 const ServicesPreview = () => {
     const servicesProvided = [
         {
             serviceName: 'Cutting & Styling',
             id: 1
+
         },
         {
             serviceName: 'Color & Highlights',
@@ -23,12 +26,12 @@ const ServicesPreview = () => {
             <div className="flex flex-row w-full justify-evenly" >
                 {
                     servicesProvided.map((service) => (
-                        <div key={service.id} className='flex flex-col items-center justify-center w-48 space-y-16 text-3xl text-center break-words bg-black h-52 text-zinc-50'>
-                            <div>
+                        <div key={service.id} className='flex flex-col items-center justify-center text-3xl text-center break-words bg-slate-300 w-80 h-52 text-zinc-50'>
+                            <div className="flex items-center justify-center text-black h-3/5">
                                 <h4>{service.serviceName}</h4>
                             </div>
-                            <div>
-                                <p>learn more</p>
+                            <div className="flex items-center justify-center text-gray-800 text-md h-1/5">
+                                <Link to='/services'>Learn More</Link>
                             </div>
 
                         </div>
