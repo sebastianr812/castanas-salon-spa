@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   mode: 'jit',
   content: [
@@ -8,11 +11,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        openSans: ['Open Sans', 'sans-serif']
+        openSans: ['Open Sans', 'sans-serif'],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
       }
     },
   },
   plugins: [
-    require('tw-elements/dist/plugin')
+    require('tw-elements/dist/plugin'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/typography')
   ],
 }

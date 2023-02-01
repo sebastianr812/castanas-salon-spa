@@ -14,7 +14,7 @@ const Navigation = () => {
                     <div className="px-5 py-2.5 hover:bg-gray-400 hover:cursor-pointer"><Link className='hover:cursor-pointer' to='/about'>ABOUT</Link></div>
                     <div className="px-5 py-2.5 hover:bg-gray-400 hover:cursor-pointer"><Link className='hover:cursor-pointer' to='/services'>SERVICES</Link></div>
                     <div className="px-5 py-2.5 hover:bg-gray-400 hover:cursor-pointer"><Link className='hover:cursor-pointer' to='/contact-us'>CONTACT US</Link></div>
-                    <div className="hover:bg-green-900 px-5 py-2.5 bg-green-800 rounded-full align-center text-stone-50">
+                    <div className="hover:bg-green-900 px-5 py-2.5 bg-green-800 rounded-full align-center text-stone-50 drop-shadow-2xl">
                         <Link className="" href=''>Book Online</Link>
                     </div>
 

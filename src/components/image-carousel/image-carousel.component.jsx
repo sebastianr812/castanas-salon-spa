@@ -1,6 +1,6 @@
 const ImageCarousel = () => {
     return (
-        <div className="flex ">
+        <div className="flex mt-10 shadow ">
             <div className="w-1/2 bg-green-500 "></div>
             <div id="carouselExampleSlidesOnly" className="relative w-1/2 carousel slide" data-bs-ride="carousel" >
                 <div className="relative w-full overflow-hidden carousel-inner" >

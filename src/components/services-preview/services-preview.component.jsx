@@ -19,7 +19,7 @@ const ServicesPreview = () => {
 
 
     return (
-        <div className="flex flex-col items-center justify-center w-full h-[350px] px-5 py-10 my-4 space-y-4 border-4 border-black border-solid bg-emerald-300 border-x-0">
+        <div className="flex flex-col items-center justify-center w-screen h-[350px] px-5 py-10 my-4 space-y-4 border-4 border-black border-solid bg-emerald-300 border-x-0 mb-10">
             <div className="h-12 text-center bg-indigo-400 ">
                 <h4>Castana's Salon Services</h4>
             </div>
