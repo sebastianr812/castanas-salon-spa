@@ -72,7 +72,7 @@ export default function Gallary() {
     return (
         <>
 
-            <ul role="list" className="grid grid-cols-2 mt-10 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
+            <ul role="list" className="grid grid-cols-2 mx-10 mt-10 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
                 {files.map((file) => (
                     <li key={file.source} className="relative">
                         <div className="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100">

@@ -13,7 +13,7 @@ function classNames(...classes) {
 export default function NavigationTailwindUi() {
     return (
         <>
-            <Disclosure as="nav" className="bg-white shadow ">
+            <Disclosure as="nav" className="shadow ">
                 {({ open }) => (
                     <>
                         <div className="w-screen px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
@@ -32,7 +32,7 @@ export default function NavigationTailwindUi() {
                                     </div>
                                     <div className="flex items-center flex-shrink-0">
                                         <img
-                                            className="block w-auto h-8 "
+                                            className="block w-auto h-full "
                                             src={logo}
                                             alt="Your Company"
                                         />

@@ -37,7 +37,7 @@ export default function ServicesPreviewTailwindUi() {
                 <div className="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-none">
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
                         {features.map((feature) => (
-                            <div key={feature.name} className="flex flex-col">
+                            <div key={feature.name} className="flex flex-col border-r-2 border-gray-400">
                                 <dt className="text-base font-semibold leading-7 text-gray-900">
                                     <div className="flex items-center justify-center w-10 h-10 mb-6 bg-indigo-600 rounded-lg">
                                         <feature.icon className="w-6 h-6 text-white " aria-hidden="true" />
