@@ -105,8 +105,9 @@ const serviceCategories = [
 export default function Services() {
     return (
         <>
+
             <ServicesHeaderTailwindUi />
-            <div className="grid grid-cols-1 gap-4 mx-10 overflow-x-hidden lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-4 mx-10 lg:grid-cols-2">
                 {serviceCategories.map((category) => (
                     <div key={category.id} className="px-10 py-10 mt-2.5 bg-purple-600 border-purple-600 rounded-md ">
                         <div className="space-y-3">
@@ -135,6 +136,7 @@ export default function Services() {
             </div>
 
             <FooterTailwindUi />
+
         </>
 
     )
