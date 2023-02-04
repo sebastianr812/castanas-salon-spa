@@ -26,7 +26,7 @@ const features = [
 
 export default function ServicesPreviewTailwindUi() {
     return (
-        <div className="py-24 bg-white sm:py-32">
+        <div className="py-24 bg-green-300 sm:py-32">
             <div className="px-6 mx-auto max-w-7xl lg:px-8">
                 <div className="flex flex-col items-center justify-center max-w-2xl mx-auto ">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -39,7 +39,7 @@ export default function ServicesPreviewTailwindUi() {
                         {features.map((feature) => (
                             <div key={feature.name} className="flex flex-col border-r-2 border-gray-400">
                                 <dt className="text-base font-semibold leading-7 text-gray-900">
-                                    <div className="flex items-center justify-center w-10 h-10 mb-6 bg-indigo-600 rounded-lg">
+                                    <div className="flex items-center justify-center w-10 h-10 mb-6 bg-black rounded-lg">
                                         <feature.icon className="w-6 h-6 text-white " aria-hidden="true" />
                                     </div>
                                     {feature.name}
@@ -47,7 +47,7 @@ export default function ServicesPreviewTailwindUi() {
                                 <dd className="flex flex-col flex-auto mt-1 text-base leading-7 text-gray-600">
                                     <p className="flex-auto">{feature.description}</p>
                                     <p className="mt-6">
-                                        <a href={feature.href} className="text-base font-semibold leading-7 text-indigo-600">
+                                        <a href={feature.href} className="text-base font-semibold leading-7 text-blue-500">
                                             Learn more <span aria-hidden="true">→</span>
                                         </a>
                                     </p>

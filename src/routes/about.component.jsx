@@ -4,9 +4,9 @@ import FooterTailwindUi from '../components/footer-tailwindui/footer-tailwindui.
 export default function About() {
     return (
         <>
-            <div className="overflow-hidden bg-white">
+            <div className="overflow-hidden bg-yellow-500">
                 <div className="relative px-6 py-16 mx-auto max-w-7xl lg:px-8">
-                    <div className="absolute top-0 bottom-0 hidden w-screen left-3/4 bg-gray-50 lg:block" />
+                    <div className="absolute top-0 bottom-0 hidden w-screen bg-yellow-500 left-3/4 lg:block" />
                     <div className="mx-auto text-base max-w-prose lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
                         <div>
 

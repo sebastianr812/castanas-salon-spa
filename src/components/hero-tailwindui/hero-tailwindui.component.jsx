@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function HeroTailwindUi() {
     return (
-        <div className="relative bg-white ">
+        <div className="relative bg-amber-300 ">
             <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8 ">
                 <div className="px-6 pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pt-48 lg:pb-56 xl:col-span-6">
                     <div className="max-w-2xl mx-auto lg:mx-0">

@@ -1,6 +1,6 @@
 export default function ServicesHeaderTailwindUi() {
     return (
-        <div className="bg-white ">
+        <div className="bg-blue-300 ">
             <div className="px-6 py-16 mx-auto max-w-7xl sm:py-18 lg:px-8">
                 <div className="text-center">
 

@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import HeroTailwindUi from '../components/hero-tailwindui/hero-tailwindui.component';
 import ServicesPreviewTailwindUi from '../components/services-preview-tailwindui/services-preview-tailwindui.component';
 import FooterTailwindUi from '../components/footer-tailwindui/footer-tailwindui.component';
-import Divider from '../components/divider/divider-tailwindui.component';
+
 
 
 
@@ -16,10 +16,10 @@ export const Home = () => {
             <ServicesPreview />
              */}
             <HeroTailwindUi />
-            <Divider />
+
             <ServicesPreviewTailwindUi />
 
-            <Divider />
+
             <FooterTailwindUi />
 
 

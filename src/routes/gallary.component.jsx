@@ -8,6 +8,7 @@ import image7 from '../assets/castanas-salon-gallary/image-7.jpg';
 import image8 from '../assets/castanas-salon-gallary/image-8.jpg';
 import image9 from '../assets/castanas-salon-gallary/image-9.jpg';
 import FooterTailwindUi from '../components/footer-tailwindui/footer-tailwindui.component';
+import GallaryHeaderTailwindUi from '../components/gallary-header-tailwindui/gallary-header-tailwindUi.component';
 
 const files = [
     {
@@ -71,7 +72,7 @@ const files = [
 export default function Gallary() {
     return (
         <>
-
+            <GallaryHeaderTailwindUi />
             <ul role="list" className="grid grid-cols-2 mx-10 mt-10 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">
                 {files.map((file) => (
                     <li key={file.source} className="relative">

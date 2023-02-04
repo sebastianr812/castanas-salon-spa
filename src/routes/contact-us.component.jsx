@@ -1,12 +1,25 @@
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import FooterTailwindUi from '../components/footer-tailwindui/footer-tailwindui.component';
 import picture from '../assets/woman-bike-unsplash.jpg';
+import { useEffect } from 'react';
+import { useLoadScript } from "@react-google-maps/api";
+import Spinner from '../components/spinner/spinner.component';
+import Map from '../components/google-maps/map.component';
+
 
 export default function ContactUs() {
+
+    const { isLoaded } = useLoadScript({
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+
+    });
+
+    if (!isLoaded) return <div>Loading...</div>
+
     return (
         <>
-            <div className="w-auto bg-purple-400 h-[458px] ">
-
+            <div >
+                <Map />
             </div>
             <div className="bg-white">
                 <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8">
@@ -63,7 +76,7 @@ export default function ContactUs() {
                                         <EnvelopeIcon className="w-6 h-6 text-gray-400" aria-hidden="true" />
                                     </div>
                                     <div className="ml-3 text-base text-gray-500">
-                                        <p>support@example.com</p>
+                                        <p>support@castanas_salon.com</p>
                                     </div>
                                 </div>
                             </div>
