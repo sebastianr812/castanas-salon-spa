@@ -1,6 +1,8 @@
 import { useState, useRef, useMemo, useCallback } from "react";
 import {
     GoogleMap,
+    OverlayView,
+    MarkerF,
     Marker
 
 } from '@react-google-maps/api'
@@ -22,19 +24,16 @@ export default function Map() {
     const label = useMemo(() => `Castana's Salon`, [])
 
     return (
-        <div>
+        <div >
             <GoogleMap
                 zoom={14}
                 center={center}
                 mapContainerClassName='w-full h-[450px]'
                 options={options}
             >
-                <Marker position={center} label={{
-                    text: `Castana's Salon`,
-                    fontFamily: 'Open Sans',
+                <MarkerF position={center} label={label} />
 
 
-                }} />
             </GoogleMap>
         </div>
     );
