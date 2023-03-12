@@ -26,12 +26,13 @@ export default function Map() {
     return (
         <div >
             <GoogleMap
-                zoom={14}
+                zoom={18}
                 center={center}
                 mapContainerClassName='w-full h-[450px]'
                 options={options}
             >
-                <MarkerF position={center} label={label} />
+
+
 
 
             </GoogleMap>
